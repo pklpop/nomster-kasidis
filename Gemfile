@@ -27,11 +27,13 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '~> 3.3.4.1'
 
 gem 'will_paginate-bootstrap'
 
 gem 'simple_form'
+
+gem 'sprockets' , '<= 2.11.0'
 
 
 group :doc do
