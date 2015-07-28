@@ -7,8 +7,9 @@ root 'places#index'
   # root 'welcome#index'
 resources :places do
   resources :comments, :only => :create
-  resources :photos, :only => :create
+  resources :photos, :only => [:create , :destroy]
 end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
