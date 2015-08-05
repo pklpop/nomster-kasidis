@@ -5,6 +5,8 @@ Nomster::Application.routes.draw do
 root 'places#index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+resources :users, :only => :show
+
 resources :places do
   resources :comments, :only => :create
   resources :photos, :only => [:create , :destroy]
