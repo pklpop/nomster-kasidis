@@ -6,14 +6,14 @@ class PhotosController < ApplicationController
 		redirect_to place_path(@place)
 	end
 
-	#def destroy_photo
-		#@photo = Place.find(params[:place_id])
-		#if place.valid?
-			#	@photo = Photo.find(params[:id])
-			#	@photo.destroy
-			#	redirect_to place_path(@place)
-		#end
-	#end
+	def destroy
+		@place = Place.find(params[:place_id])
+		if @place.valid?
+				@photo = Photo.find(params[:id])
+				@photo.destroy
+				redirect_to place_path(@place)
+		end
+	end
 		#first you will find the place id and then the photo id 
 		#find place with id :place_id
 		#if place exist

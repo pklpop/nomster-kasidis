@@ -75,6 +75,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <% @place.photos.each do |photo| %>
 <%= image_tag photo.picture %>
 <%= photo.caption %>
+<button type="button" class="btn btn-default">Delete picture</button>
 <% end %>
 </div>
 </div>
