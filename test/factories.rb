@@ -14,4 +14,12 @@ FactoryGirl.define do
 		latitude 42.3478210
 		longitude 12.2312124
 		association :user
-end	
+	end	
+
+	factory :comment do
+		message "yolo"
+		rating "1_star"
+		association :user
+		association :place
+	end
+end
