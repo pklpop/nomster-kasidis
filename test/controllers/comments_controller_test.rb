@@ -17,13 +17,12 @@ class CommentsControllerTest < ActionController::TestCase
 	 			}
 	 	end
 
-		 assert_redirected_to places_path(place)
+		 assert_redirected_to place_path(place)
 
 		 assert_equal 1, user.comments.count
 		end
 
 end
-
 
 
 #assert_difference = This is just checking to make sure that the number of objects for whatever 

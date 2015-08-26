@@ -4,6 +4,7 @@ class Place < ActiveRecord::Base
 	has_many :photos
 	geocoded_by :address
 	after_validation :geocode
+	dependent: :destroy
 
 
 	validates :name, :presence => true, length: { minimum:3 }

@@ -8,3 +8,4 @@ test "show" do
 	get :show, :id => user.id
 	assert_response :success
 end
+end
